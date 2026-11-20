@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srectl"
+version = "0.1.0"
+description = "Production SRE & Observability CLI Toolkit"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+srectl = "srectl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
